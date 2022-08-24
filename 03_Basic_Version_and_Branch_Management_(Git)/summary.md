@@ -30,6 +30,8 @@ Saat kita melakukan perubahan, kita memasukan command `git add [name file]` untu
 
 Saat melakukan commit, diperhatikan pesan yang ingin disampaikan benar-benar jelas sesuai perubahan yang dilakukan.
 
+`git stash` biasanya digunakan untuk menyimpan kode yang masih dalam status changes (belum ke staging area). `git stast apply` untuk mengembalikan perubahan yang terjadi. Contoh kasus ini ketika kita telah membuat banyak perubahan pada suatu kode, terus salah branch. Fitur ini jadi help banget.
+
 ### Poin 03 - Reset
 
 Dapat kembali kepada commmit sebelumnya berdasarkan id commit tersebut. Id commit bisa didapatkan melalui command `git log --oneline`.
