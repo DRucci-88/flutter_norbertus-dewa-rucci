@@ -10,13 +10,13 @@ Git Repository (folder project) berisi semua file, folder dan file history (hist
 
 Berikut beberapa command yang tersedia:
 
-- git init
-- git add [name of file]
-- git commit -m "message"
-- git push -u origin main
-- git remote add origin [link repo]
-- git branch -M main
-- git clone
+- `git init`
+- `git add [name of file]`
+- `git commit -m "message"`
+- `git push -u origin main`
+- `git remote add origin [link repo]`
+- `git branch -M main`
+- `git clone`
 
 ### Poin 02 - Saving Changes
 
