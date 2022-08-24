@@ -1,6 +1,13 @@
 # Praktikum - (03) Basic Version and Branch Management (Git)
 
-<img src='../screenshots/C.png' />
+<div align='center'>
+  <img src='../screenshots/Nodejs.png' style='margin: auto' width='25%' />
+</div>
+All code written in javascript
+
+## Link Repository test
+
+https://github.com/DRucci-88/git-test-rucci
 
 ## Membuat repository
 
