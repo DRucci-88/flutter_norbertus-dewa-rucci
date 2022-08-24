@@ -20,7 +20,7 @@ Berikut beberapa command yang tersedia:
 
 ### Poin 02 - Saving Changes
 
-Terdapat 3 tempat dalam mekanisme git yakni 
+Terdapat 3 tempat dalam mekanisme git yakni:
 
 - Working directory: melakukan pengubahan secara lokal yang nantinya akan di update ke server.
 - Staging area: menandai file-file yang berubah, lakukan commit sesuai pesan perubahan.
