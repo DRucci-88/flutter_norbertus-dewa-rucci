@@ -1,5 +1,4 @@
 void main(List<String> args) {
-  var sco = 1;
   print('Factorial 10: ${factorial(10)}');
   print('Factorial 20: ${factorial(20)}');
   print('Factorial 30: ${factorial(30)}');
