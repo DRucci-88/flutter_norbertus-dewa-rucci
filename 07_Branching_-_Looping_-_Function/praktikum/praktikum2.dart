@@ -4,8 +4,8 @@ void main(List<String> args) {
   print('Factorial 30: ${factorial(30)}');
 }
 
-int factorial(int number) {
-  var total = 1;
+double factorial(int number) {
+  var total = 1.0;
   for (var i = number; i > 0; i--) {
     total *= i;
   }
