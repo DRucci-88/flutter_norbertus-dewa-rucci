@@ -1,5 +1,7 @@
 import 'dart:math';
 
+// Bahas kegunaan abstract class
+
 abstract class BangunRuang {
   late double panjang, lebar, tinggi;
   BangunRuang({this.panjang = 0.0, this.lebar = 0.0, this.tinggi = 0.0});
@@ -10,6 +12,11 @@ class Kubus extends BangunRuang {
   late double sisi;
   // Kubus(this.sisi) : super(lebar: 2, panjang: 3, tinggi: 10);
   // Kubus() : super(0.0, 0.0, 0.0);
+  // Kubus(double sisi) {
+  //   this.sisi = sisi;
+  //   super.panjang = super.tinggi = super.lebar = sisi;
+  // }
+
   Kubus(this.sisi);
   @override
   double volume() => pow(sisi, 3).toDouble();
