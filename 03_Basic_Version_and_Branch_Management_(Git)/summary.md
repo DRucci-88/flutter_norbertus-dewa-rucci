@@ -53,7 +53,7 @@ Beberapa command:
 - `git branch -D [branch]` force delete branch
 - `git branch -a` list remote
 - `git checkout -b new-feature master` start new feature
-- `git checkout master` 
+- `git checkout master` pindah branch
 - `git merge new-feature`
 - `git branch -d new-feature`
 
