@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:badges/badges.dart';
 import 'package:barcode_widget/barcode_widget.dart';
 
 void main() {
