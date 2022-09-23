@@ -1,11 +1,9 @@
-# Asstes
-
-## Assets
+# Assets
 
 - File yang di bundled dan di deployed bersamaan dengan aplikasi
 - Tipe-tipe assets, seperti static data (JSON fiels), icons, images, dan font file (ttf)
 
-Menggunakan asstets
+Menggunakan Assets
 
 - Flutter menggunakan pubspec.yaml
 - Pubspec.yaml terletak pada root project, untuk mengidentifikasi asstes yang dibutuhkan aplikasi
