@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+        "image": "https://picsum.photos/id/0/200/300",
+        "name": "Press Room",
+        "body": {
+            "username": "Ashley",
+            "message": "Wow, nice mention!"
+        },
+        "date": "5:54 PM",
+        "attachment": false,
+        "read": false,
+        "favorite": false,
+        "group": true,
+        "unread": 2
+        },
+        {
+        "image": "https://picsum.photos/id/10/200/300",
+        "name": "Monika Goldsmith",
+        "body": {
+            "username": "",
+            "message": "Photo"
+        },
+        "date": "1:37 PM",
+        "attachment": true,
+        "read": true,
+        "favorite": false,
+        "group": false,
+        "unread": 0
+        },
+        {
+        "image": "https://picsum.photos/id/100/200/300",
+        "name": "Jaina Moore",
+        "body": {
+            "username": "",
+            "message": "What?!"
+        },
+        "date": "1:12 PM",
+        "attachment": false,
+        "read": false,
+        "favorite": false,
+        "group": false,
+        "unread": 0
+        },
+        {
+        "image": "https://picsum.photos/id/1002/200/300",
+        "name": "Paul Dogger",
+        "body": {
+            "username": "",
+            "message": "You have my financial support"
+        },
+        "date": "Tue",
+        "attachment": false,
+        "read": false,
+        "favorite": true,
+        "group": false,
+        "unread": 0
+        },
+        {
+        "image": "https://picsum.photos/id/1009/200/300",
+        "name": "Ben Rodriguez",
+        "body": {
+            "username": "",
+            "message": "Update? update my shiny metal a..."
+        },
+        "date": "Tue",
+        "attachment": false,
+        "read": false,
+        "favorite": false,
+        "group": false,
+        "unread": 0
+        },
+        {
+        "image": "https://picsum.photos/id/1019/200/300",
+        "name": "Factory",
+        "body": {
+            "username": "Winston",
+            "message": "Let's design more robots!"
+        },
+        "date": "Mon",
+        "attachment": false,
+        "read": false,
+        "favorite": false,
+        "group": true,
+        "unread": 0
+        },
+        {
+        "image": "https://picsum.photos/id/1011/200/300",
+        "name": "Kate",
+        "body": {
+            "username": "",
+            "message": "Document"
+        },
+        "date": "Wed",
+        "attachment": true,
+        "read": false,
+        "favorite": false,
+        "group": false,
+        "unread": 0
+        }
+    ]
+}
