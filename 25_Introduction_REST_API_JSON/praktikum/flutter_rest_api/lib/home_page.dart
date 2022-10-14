@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rest_api/user.dart';
 import 'data_service.dart';
@@ -63,9 +64,11 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () {
-                      DataService.getUsers().then(
-                          (res) => setState(() => _result = res.toString()));
+                    onPressed: () async {
+                      try {
+                        String res = await DataService.getUsers() as String;
+                        setState(() => _result = res);
+                      } on DioError catch (_) {}
                     },
                     child: const Text('GET'),
                   ),
@@ -73,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(width: 8.0),
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () {
+                    onPressed: () async {
                       if (_nameCtl.text.isEmpty) {
                         displaySnackbar('Enter name correctly');
                         return;
@@ -82,11 +85,11 @@ class _HomePageState extends State<HomePage> {
                         displaySnackbar('Enter name correctly');
                         return;
                       }
-                      DataService.postUser(_nameCtl.text, _jobCtl.text).then(
-                        (res) => setState(
-                          () => _result = res.toString(),
-                        ),
-                      );
+                      try {
+                        String res = await DataService.postUser(
+                            _nameCtl.text, _jobCtl.text);
+                        setState(() => _result = res);
+                      } on DioError catch (_) {}
                       _nameCtl.clear();
                       _jobCtl.clear();
                     },
@@ -96,21 +99,20 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(width: 8.0),
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () {
+                    onPressed: () async {
                       if (_nameCtl.text.isEmpty) {
                         displaySnackbar('Enter name correctly');
                         return;
                       }
                       if (_jobCtl.text.isEmpty) {
-                        displaySnackbar('Enter name correctly');
+                        displaySnackbar('Enter Job correctly');
                         return;
                       }
-                      DataService.putUser('3', _nameCtl.text, _jobCtl.text)
-                          .then(
-                        (res) => setState(
-                          () => _result = res.toString(),
-                        ),
-                      );
+                      try {
+                        String res = await DataService.putUser(
+                            '3', _nameCtl.text, _jobCtl.text);
+                        setState(() => _result = res);
+                      } on DioError catch (_) {}
                       _nameCtl.clear();
                       _jobCtl.clear();
                     },
@@ -120,12 +122,11 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(width: 8.0),
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () {
-                      DataService.deleteUser('4').then(
-                        (res) => setState(
-                          () => _result = 'Delete Success',
-                        ),
-                      );
+                    onPressed: () async {
+                      try {
+                        String res = await DataService.deleteUser('4');
+                        setState(() => _result = res);
+                      } on DioError catch (_) {}
                     },
                     child: const Text('DELETE'),
                   ),
@@ -137,10 +138,10 @@ class _HomePageState extends State<HomePage> {
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () async {
-                      final users = await DataService.test();
-                      setState(() {
-                        _users.addAll(users);
-                      });
+                      try {
+                        final users = await DataService.test();
+                        setState(() => _users.addAll(users));
+                      } on DioError catch (_) {}
                     },
                     child: const Text('Model Class User Example'),
                   ),
